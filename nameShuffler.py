@@ -1,6 +1,8 @@
+#!/bin/python3
 import argparse
 import os.path
 import contextlib
+
 def nameShuffle (name):
     name = name.split() # Split the white spaces
     print(name[0][0]+name[1])
@@ -31,7 +33,8 @@ def is_valid_file(parser, arg):
 
 parser = argparse.ArgumentParser(description='A script to automate usernames pattern shuffling.')
 parser.add_argument("-o", "--output", help="Select output file.")
-parser.add_argument("-f", "--file", help="Select users.txt file.", required=True)
+requiredNamed = parser.add_argument_group('Required arguments')
+requiredNamed.add_argument("-f", "--file", help="Select users.txt file.", required=True)
 args = parser.parse_args()
 outputFile = args.output
 inputFile = args.file
