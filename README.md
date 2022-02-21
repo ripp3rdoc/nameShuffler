@@ -1,5 +1,5 @@
 # nameShuffler.py
-![](nameShuffler-wallpaper.png)
+![](nameShuffler-wallpaper2.png)
 A python script to automate generating username lists of an existing list of 'first' and 'last' names. It's helpful while conducting a brute force attacks against usernames and/or emails on a specific network.
 
 Usage:
