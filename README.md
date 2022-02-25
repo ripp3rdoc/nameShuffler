@@ -6,6 +6,7 @@ A python script to automate generating username lists of an existing list of 'fi
 
 Usage:
 ```shell
-~# python3 nameShuffler.py -f users.txt [-o output.txt] [-d domain.com]
+sudo git clone https://github.com/TSlayman/nameShuffler.git /opt/nameShuffler && cd /opt/nameShuffler
+python3 nameShuffler.py -f users.txt [-o output.txt] [-d domain.com]
 ```
 > Note: The users.txt should consists of first and last names.
