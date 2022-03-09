@@ -11,7 +11,7 @@ print(
 
 
 def nameShuffle(name):
-    if "-d":
+    if targetDomain:
         name = name.split()  # Split the white spaces
         print(name[0][0] + name[1] + "@" + domain)
         print(name[0][0] + "." + name[1] + "@" + domain)
@@ -61,5 +61,5 @@ requiredNamed.add_argument("-f", "--file", help="Select users.txt file.", requir
 args, leftovers = parser.parse_known_args()
 outputFile = args.output
 inputFile = args.file
-domain = args.domain
+targetDomain = args.domain
 is_valid_file(parser, inputFile)
