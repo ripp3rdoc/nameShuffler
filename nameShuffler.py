@@ -12,7 +12,7 @@ print(
 
 def nameShuffle(name):
     if targetDomain:
-        name = name.split()  # Split the white spaces
+        name = name.lower().split()  # Split the white spaces
         print(name[0][0] + name[1] + "@" + domain)
         print(name[0][0] + "." + name[1] + "@" + domain)
         print(name[0] + "." + name[1] + "@" + domain)
@@ -22,7 +22,7 @@ def nameShuffle(name):
         print(name[0][0] + "-" + name[1] + "@" + domain)
         print(name[0][0] + "_" + name[1] + "@" + domain)
     else:
-        name = name.split()  # Split the white spaces
+        name = name.lower().split()  # Split the white spaces
         print(name[0][0] + name[1])
         print(name[0][0] + "." + name[1])
         print(name[0] + "." + name[1])
